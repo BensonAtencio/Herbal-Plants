@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Herbal Plants</ion-title>
+
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list *ngFor="let herbal of Herbal">
+    <ion-item>
+      <ion-avatar slot="start">
+      <ion-img [src]="ailments.image"></ion-img>
+      </ion-avatar>
+        <ion-label>{{Herbal.title}}</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Ailment and Prescription</ion-title>
+
+    <!-- Hamburger -->
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list *ngFor="let ailments of ailments">
+    <ion-item>
+      <ion-avatar slot="start">
+        <ion-img [src]="ailments.image"></ion-img>
+      </ion-avatar>
+        <ion-label>{{ailments.title}}</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
