@@ -11,7 +11,7 @@
 
 <ion-content>
   <ion-list *ngFor="let herbal of herbal">
-    <ion-item>
+    <ion-item routerLink="details" >
       <ion-avatar slot="start">
       <ion-img [src]="herbal.image"></ion-img>
       </ion-avatar>
