@@ -10,12 +10,12 @@
 </ion-header>
 
 <ion-content>
-  <ion-list *ngFor="let herbal of Herbal">
+  <ion-list *ngFor="let herbal of herbal">
     <ion-item>
       <ion-avatar slot="start">
-      <ion-img [src]="ailments.image"></ion-img>
+      <ion-img [src]="herbal.image"></ion-img>
       </ion-avatar>
-        <ion-label>{{Herbal.title}}</ion-label>
+        <ion-label>{{herbal.title}}</ion-label>
     </ion-item>
   </ion-list>
 </ion-content>
